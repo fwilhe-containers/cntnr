@@ -15,3 +15,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: make
       run: make
+    - run: strace ./app
+    - run: strace ./cntnr ./app
+    - run: strace python3 app.py
+    - run: strace ./cntnr python3 app.py
