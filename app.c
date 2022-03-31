@@ -5,9 +5,11 @@
 int main(int argc, char *argv[]) {
     char hostname[10];
     gethostname(hostname, 10);
+    char* username = getpwuid(getuid())->pw_name;
     printf("args    : %d\n", argc);
     printf("uid     : %d\n", getuid());
-    printf("username: %s\n", getpwuid(getuid())->pw_name);
+    printf("username: %s\n", username);
     printf("hostname: %s\n", hostname);
+
     return 0;
 }

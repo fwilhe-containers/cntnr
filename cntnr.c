@@ -18,7 +18,7 @@ static void usage(char *pname) {
 }
 
 int main(int argc, char *argv[]) {
-  int flags, opt;
+  int flags;
   flags = 0;
   flags |= CLONE_NEWCGROUP;
   flags |= CLONE_NEWIPC;
