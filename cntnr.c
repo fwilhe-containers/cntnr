@@ -20,13 +20,13 @@ static void usage(char *pname) {
 int main(int argc, char *argv[]) {
   int flags;
   flags = 0;
-  flags |= CLONE_NEWCGROUP;
-  flags |= CLONE_NEWIPC;
-  flags |= CLONE_NEWNS;
-  flags |= CLONE_NEWNET;
-  flags |= CLONE_NEWPID;
+  // flags |= CLONE_NEWCGROUP;
+  // flags |= CLONE_NEWIPC;
+  // flags |= CLONE_NEWNS;
+  // flags |= CLONE_NEWNET;
+  // flags |= CLONE_NEWPID;
   // flags |= CLONE_NEWTIME;
-  flags |= CLONE_NEWUTS;
+  // flags |= CLONE_NEWUTS;
   flags |= CLONE_NEWUSER;
 
   if (optind >= argc)
