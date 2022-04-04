@@ -16,6 +16,6 @@ Run `make`.
 
 - [man 3 exec](https://man7.org/linux/man-pages/man3/exec.3.html)
 
-https://man7.org/tlpi/code/online/dist/users_groups/ugid_functions.c.html
+- [`users_groups/ugid_functions.c`](https://man7.org/tlpi/code/online/dist/users_groups/ugid_functions.c.html)
 
-https://p403n1x87.github.io/running-c-unit-tests-with-pytest.html
+- [Running C unit tests with pytest](https://p403n1x87.github.io/running-c-unit-tests-with-pytest.html)

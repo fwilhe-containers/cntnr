@@ -22,9 +22,12 @@ def test_run_apps_with_args():
     assert parsed_stdout['uid'] == '65534'
     assert stderr == ""
 
-def test_run_python_uid():
-    stdout, stderr = cntnr(['python', 'print_uid.py'])
-    assert stdout == "65534"
+@pytest.mark.parametrize("test_input,expected", [
+    ("print_uid.py", "65534")
+    ])
+def test_run_python_uid(test_input, expected):
+    stdout, stderr = cntnr(['python', 'tests/' + test_input])
+    assert stdout == expected
     assert stderr == ""
 
 # def test_run_python_username():
